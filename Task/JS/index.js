@@ -27,11 +27,11 @@ if(qty >=1 && qty <= 100  ){
             
         }
     }
+    else if (qty === "" ){
+        alert(" You must input a quantity!")
+    }
     else if (qty < 1 ){
         alert("Please you have to input a Valid quantity")
-    }
-    else if (qty == null ){
-        alert(" You must input a quantity!")
     }
     else if (qty > 100){
         let  yes = confirm("This amount of good will take too long to be delivered! Continue? ")
